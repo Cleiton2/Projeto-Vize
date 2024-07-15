@@ -26,7 +26,7 @@ namespace Projeto_Vize.Controllers
         {
             ProdutoModel produto = await new ProdutoRepositorio(_config).ConsulteProdutoPorId(id);
 
-            return produto.Id >= 0 ?  produto : BadRequest("Produto não Cadastrado");
+            return produto.Id != 0 ?  produto : BadRequest("Produto não Cadastrado");
         }
             
 
@@ -58,7 +58,7 @@ namespace Projeto_Vize.Controllers
 
         [HttpPost]
         [Route("EditeProduto/{id}")]
-        public async Task<ActionResult<ProdutoModel>> EditeProduto([FromBody] ProdutoModel produto, int id)
+        public async Task<ActionResult> EditeProduto([FromBody] ProdutoModel produto, int id)
         {
             if (id <= 0)
             {
@@ -67,17 +67,23 @@ namespace Projeto_Vize.Controllers
 
             await new ProdutoRepositorio(_config).EditeProduto(produto, id);
 
-            return produto;
+            return Ok();
         }
 
         [HttpDelete]
         [Route("RemovaProduto/{id}")]
-        public async Task RemovaProduto(int id)
+        public async Task<ActionResult> RemovaProduto(int id)
         {
-            if (id > 0)
+            bool ehIdCadastrado = await new ProdutoRepositorio(_config).EhIdCadastrado(id);
+
+            if (ehIdCadastrado)
             {
-                await new ProdutoRepositorio(_config).RemovaProduto(id);
+                return BadRequest("Código de produto não cadastrado!");
             }
+
+            await new ProdutoRepositorio(_config).RemovaProduto(id);
+
+            return Ok();
         }
     }
 }

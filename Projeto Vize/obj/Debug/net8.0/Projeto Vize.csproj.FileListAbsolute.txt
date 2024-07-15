@@ -105,3 +105,4 @@ C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\refint\Pr
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.pdb
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.genruntimeconfig.cache
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\ref\Projeto Vize.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.sourcelink.json

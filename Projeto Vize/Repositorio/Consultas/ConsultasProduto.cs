@@ -12,7 +12,7 @@ namespace Projeto_Vize.Repositorio.Consultas
 
         public async Task AdicioneProduto(ProdutoModel produtoModel)
         {
-            string stringProdutoId = produtoModel.Id > 0 ? "@produtoModel.Id" : "(SELECT MAX(produto_id) + 1 FROM produto)";
+            string stringProdutoId = produtoModel.Id > 0 ? "@produto_id" : "(SELECT MAX(produto_id) + 1 FROM produto)";
 
             await using NpgsqlConnection conn = new(_configuration.GetConnectionString("PROJETOVIZE"));
             await using NpgsqlCommand cmd = conn.CreateCommand();
