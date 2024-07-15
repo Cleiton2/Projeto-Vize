@@ -1,0 +1,22 @@
+1 - Quais principios do SOLID foram usados? Qual o motivo da escolha deles?
+
+Princípio da Responsabilidade Única - pois um método deve possuir apenas uma função, evita a sobrecarga e em casos de mudanças,
+a alteração terá impacto somente no que for referente a aquele método.
+Princípio aberto/fechado - Implementação de interfaces para que novos métodos possam ser implementados mas que os padrões não sejam
+alterados, a partir do momento que o contrato com a interface seja respeitado.
+Segregação da interface - interface específica para o repositório indicado, para obrigar somente aquela classe a implementar as informações.
+Inversão da dependência - Para permitir a extensão da classe(como do repositóio), a dependência foi dedicada a uma interface.
+
+2- Dado um cenário que necessite de alta performance, cite 2 locais possíveis de melhorar a performance da API criada e explique como seria
+a implementação da melhoria.
+
+1º ponto - Verificar pontos quentes no código, a partir deles já podemos verificar a respeito do consumo de memória: loops mal feitos, operações criadas
+de maneira errada. Ex: uma inserção em banco de dados, de uma lista de dados, feita em loop. Multiplas conexões geram o problema n+1 a partir do
+ponto que muitas conexões são criadas mas não são fechadas.
+
+2º ponto - Verificar as consultas utilizadas e verificar se o indice delas pode ser melhorado, buscando uma operação otimizada no BD.
+
+Implementação de solução: criar Métodos e consultas a parte, que não alteram o fluxo atual e realizar as atividades a partir deles, quando estiver
+de acordo com o resultado esperado, substituir o método legado pelo novo, aplicando a solução.
+
+ 
