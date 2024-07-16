@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Net;
+using System.Text;
 
 namespace Projeto_Vize
 {
@@ -10,7 +11,7 @@ namespace Projeto_Vize
         {
             if (!context.Request.Headers.ContainsKey("Authorization"))
             {
-                context.Response.StatusCode = 401;
+                context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
                 await context.Response.WriteAsync("Usuário não autorizado");
                 return;
             }
@@ -24,7 +25,7 @@ namespace Projeto_Vize
 
             if(idusuario != "Admin" || senha != "admin2024")
             {
-                context.Response.StatusCode = 401;
+                context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
                 await context.Response.WriteAsync("Usuário não autorizado");
                 return;
             }
