@@ -6,9 +6,9 @@ namespace Projeto_Vize.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProdutoController(IProdutoRepositorio configuration) : ControllerBase
+    public class ProdutoController(IProdutoRepositorio _repositorioProduto) : ControllerBase
     {
-        private readonly IProdutoRepositorio _repositorioProduto = configuration;
+        private readonly IProdutoRepositorio _repositorioProduto = _repositorioProduto;
 
         [HttpGet]
         [Route("ObtenhaProdutos")]
