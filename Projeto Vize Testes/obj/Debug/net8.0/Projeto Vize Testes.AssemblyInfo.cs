@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Projeto Vize")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Projeto Vize Testes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+517fd6851d24b00ee1ae4c38cce997a2b9b65972")]
-[assembly: System.Reflection.AssemblyProductAttribute("Projeto Vize")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Projeto Vize")]
+[assembly: System.Reflection.AssemblyProductAttribute("Projeto Vize Testes")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Projeto Vize Testes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

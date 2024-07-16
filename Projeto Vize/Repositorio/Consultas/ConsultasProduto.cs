@@ -8,13 +8,13 @@ namespace Projeto_Vize.Repositorio.Consultas
 {
     public class ConsultasProduto(IConfiguration configuration) : IConsulta
     {
-        private readonly IConfiguration _configuration = configuration;
+        private readonly string _configuration = configuration.GetConnectionString("PROJETOVIZE")!;
 
         public async Task AdicioneProduto(ProdutoModel produtoModel)
         {
             string stringProdutoId = produtoModel.Id > 0 ? "@produto_id" : "(SELECT MAX(produto_id) + 1 FROM produto)";
 
-            await using NpgsqlConnection conn = new(_configuration.GetConnectionString("PROJETOVIZE"));
+            await using NpgsqlConnection conn = new(_configuration);
             await using NpgsqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = @$"INSERT INTO produto (produto_id, produto_nome, produto_tipo, produto_valor)
                                 VALUES ({stringProdutoId}, @produto_nome, @produto_tipo, @produto_valor)";
@@ -38,7 +38,7 @@ namespace Projeto_Vize.Repositorio.Consultas
 
         public async Task EditeProduto(ProdutoModel produtoModel, int id)
         {
-            await using NpgsqlConnection conn = new(_configuration.GetConnectionString("PROJETOVIZE"));
+            await using NpgsqlConnection conn = new(_configuration);
             await using NpgsqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = @"UPDATE produto 
                                 SET produto_nome = @produto_nome, produto_tipo = @produto_tipo, produto_valor = @produto_valor
@@ -56,7 +56,7 @@ namespace Projeto_Vize.Repositorio.Consultas
 
         public async Task RemovaProduto(int id)
         {
-            await using NpgsqlConnection conn = new(_configuration.GetConnectionString("PROJETOVIZE"));
+            await using NpgsqlConnection conn = new(_configuration);
             await using NpgsqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = @"DELETE FROM produto WHERE produto_id = @produto_id";
 
@@ -69,7 +69,7 @@ namespace Projeto_Vize.Repositorio.Consultas
 
         public async Task<List<ProdutoModel>> ConsulteProdutos()
         {
-            await using NpgsqlConnection conn = new(_configuration.GetConnectionString("PROJETOVIZE"));
+            await using NpgsqlConnection conn = new(_configuration);
             await using NpgsqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = @"SELECT produto_id, produto_nome, produto_tipo, produto_valor FROM produto";
 
@@ -89,7 +89,7 @@ namespace Projeto_Vize.Repositorio.Consultas
 
         public async Task<ProdutoModel> ConsulteProdutoPorId(int id)
         {
-            await using NpgsqlConnection conn = new(_configuration.GetConnectionString("PROJETOVIZE"));
+            await using NpgsqlConnection conn = new(_configuration);
             await using NpgsqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = @"SELECT produto_id, produto_nome, produto_tipo, produto_valor 
                                 FROM produto WHERE produto_id=@produto_id";

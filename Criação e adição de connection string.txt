@@ -1,0 +1,46 @@
+Criação de banco de Dados pgAdmmin 4
+1 - Registrar server
+  Connection - Host name/adress: localhost; Port: 5432; Username: userPgAdmin; Password: senhaPgAdmin
+2 - Create Database
+   Database: PROJETOVIZE
+3 -Schemas -> Create Table
+	Name: produto
+	columns: produto_id(integer, not null, primary key);
+		 produto_nome(character varying, not null); 
+	         produto_tipo(integer, not null); 
+		 produto_valor(real)
+	primary key: produto_id_Pk -> produto_id
+ 	unique: produto_id_unique -> produto_id
+
+SQLS: 
+CREATE DATABASE "PROJETOVIZE"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LOCALE_PROVIDER = 'libc'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+CREATE TABLE produto(
+    produto_id (integer,
+    produto_nome VARCHAR(50) NOT NULL,
+    email character varying(50) NOT NULL,
+    senha VARCHAR(120) NOT NULL,
+    ativo BOOLEAN DEFAULT true,
+    data_nascimento DATE
+    PRIMARY KEY(codigo)
+);
+
+CREATE TABLE public.produto
+(
+    produto_id integer NOT NULL,
+    produto_nome character varying(40) NOT NULL,
+    produto_tipo integer NOT NULL,
+    produto_valor real,
+    CONSTRAINT produto_id_pk PRIMARY KEY (produto_id),
+    CONSTRAINT produto_id_unique UNIQUE (produto_id)
+)
+
+TABLESPACE pg_default;
+
+Após criar, ir na classe appsettings e inserir a conection string do server no trecho após o nome. Ex: "PROJETOVIZE": "Host=localhost;Port=5432;Pooling=true;Database=PROJETOVIZE;User Id=postgres;Password=1234;". 
