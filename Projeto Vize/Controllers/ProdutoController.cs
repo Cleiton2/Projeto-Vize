@@ -1,20 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Projeto_Vize.Models;
-using Projeto_Vize.Repositorio;
+using Projeto_Vize.Repositorio.Interfaces;
 
 namespace Projeto_Vize.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProdutoController(IConfiguration configuration) : ControllerBase
+    public class ProdutoController(IProdutoRepositorio configuration) : ControllerBase
     {
-        private readonly IConfiguration _config = configuration;
+        private readonly IProdutoRepositorio _repositorioProduto = configuration;
 
         [HttpGet]
         [Route("ObtenhaProdutos")]
         public async Task<ActionResult<List<ProdutoModel>>> ObtenhaProdutos()
         {
-            List<ProdutoModel> produtos = await new ProdutoRepositorio(_config).ConsulteProdutos();
+            List<ProdutoModel> produtos = await _repositorioProduto.ConsulteProdutos();
 
             return produtos.Count == 0 ? BadRequest("Nenhum produto encontrado") : produtos;
         }
@@ -24,7 +24,7 @@ namespace Projeto_Vize.Controllers
         [Route("ObtenhaProdutoPorId/{id}")]
         public async Task<ActionResult<ProdutoModel>> ObtenhaProdutoPorId(int id)
         {
-            ProdutoModel produto = await new ProdutoRepositorio(_config).ConsulteProdutoPorId(id);
+            ProdutoModel produto = await _repositorioProduto.ConsulteProdutoPorId(id);
 
             return produto.Id != 0 ?  produto : BadRequest("Produto não Cadastrado");
         }
@@ -33,7 +33,7 @@ namespace Projeto_Vize.Controllers
         [HttpGet]
         [Route("ConsulteEstatisticasProdutos")]
         public async Task<ActionResult<EstatisticasPorTipoModel>> ConsulteEstatisticasProdutos() =>
-            await new ProdutoRepositorio(_config).ConsulteEstatisticasProdutosPorTipo();
+            await _repositorioProduto.ConsulteEstatisticasProdutosPorTipo();
 
         [HttpPost]
         [Route("AdicioneProduto")]
@@ -44,14 +44,14 @@ namespace Projeto_Vize.Controllers
                 return BadRequest("Nome e Tipo do prodduto são obrigatórios!");
             }
 
-            bool ehIdCadastrado = await new ProdutoRepositorio(_config).EhIdCadastrado(produto.Id);
+            bool ehIdCadastrado = await _repositorioProduto.EhIdCadastrado(produto.Id);
 
             if(ehIdCadastrado)
             {
                 return BadRequest("Id já utilizado!");
             }
 
-            await new ProdutoRepositorio(_config).AdicioneProduto(produto);
+            await _repositorioProduto.AdicioneProduto(produto);
 
             return produto;
         }
@@ -65,7 +65,7 @@ namespace Projeto_Vize.Controllers
                 return BadRequest("Informe um id válido");
             }
 
-            await new ProdutoRepositorio(_config).EditeProduto(produto, id);
+            await _repositorioProduto.EditeProduto(produto, id);
 
             return Ok();
         }
@@ -74,14 +74,14 @@ namespace Projeto_Vize.Controllers
         [Route("RemovaProduto/{id}")]
         public async Task<ActionResult> RemovaProduto(int id)
         {
-            bool ehIdCadastrado = await new ProdutoRepositorio(_config).EhIdCadastrado(id);
+            bool ehIdCadastrado = await _repositorioProduto.EhIdCadastrado(id);
 
             if (ehIdCadastrado)
             {
                 return BadRequest("Código de produto não cadastrado!");
             }
 
-            await new ProdutoRepositorio(_config).RemovaProduto(id);
+            await _repositorioProduto.RemovaProduto(id);
 
             return Ok();
         }

@@ -1,4 +1,6 @@
 using Projeto_Vize;
+using Projeto_Vize.Repositorio;
+using Projeto_Vize.Repositorio.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<IProdutoRepositorio, ProdutoRepositorio>();
 
 var app = builder.Build();
 

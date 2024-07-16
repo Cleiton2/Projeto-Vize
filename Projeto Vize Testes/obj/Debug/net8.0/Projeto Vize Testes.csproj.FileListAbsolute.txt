@@ -331,6 +331,8 @@ C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Mi
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Moq.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Npgsql.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -410,8 +412,23 @@ C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\zh
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Projeto Vize.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Projeto Vize.pdb
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\obj\Debug\net8.0\Projeto Vize Testes.csproj.AssemblyReference.cache
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\obj\Debug\net8.0\MvcTestingAppManifest.json
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\obj\Debug\net8.0\Projeto Vize Testes.GeneratedMSBuildEditorConfig.editorconfig

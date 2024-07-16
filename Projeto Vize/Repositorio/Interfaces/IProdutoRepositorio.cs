@@ -10,6 +10,8 @@ namespace Projeto_Vize.Repositorio.Interfaces
 
         Task AdicioneProduto(ProdutoModel produto);
 
+        Task<bool> EhIdCadastrado(int id);
+
         Task EditeProduto(ProdutoModel produto, int id);
 
         Task RemovaProduto(int id);

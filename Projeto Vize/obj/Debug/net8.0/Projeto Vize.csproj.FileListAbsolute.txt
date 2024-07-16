@@ -91,6 +91,7 @@ C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto V
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.csproj.CoreCompileInputs.cache
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.sourcelink.json
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\staticwebassets\msbuild.Projeto Vize.Microsoft.AspNetCore.StaticWebAssets.props
@@ -105,4 +106,3 @@ C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\refint\Pr
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.pdb
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.genruntimeconfig.cache
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\ref\Projeto Vize.dll
-C:\Users\virro\source\repos\Projeto Vize\Projeto Vize\obj\Debug\net8.0\Projeto Vize.sourcelink.json
