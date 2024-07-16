@@ -316,7 +316,6 @@ C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\re
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\refs\WindowsBase.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\AutoFixture.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Castle.Core.dll
-C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\FakeItEasy.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Fare.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Testing.dll
 C:\Users\virro\source\repos\Projeto Vize\Projeto Vize Testes\bin\Debug\net8.0\Microsoft.AspNetCore.TestHost.dll

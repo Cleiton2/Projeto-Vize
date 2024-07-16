@@ -41,22 +41,6 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
-      "FakeItEasy/8.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Castle.Core": "5.1.1"
-        },
-        "compile": {
-          "lib/net8.0/FakeItEasy.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/FakeItEasy.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Fare/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -2985,29 +2969,6 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.0.nupkg.sha512",
         "coverlet.collector.nuspec"
-      ]
-    },
-    "FakeItEasy/8.3.0": {
-      "sha512": "5QmShA6njFOhQHUYrFUjWEepfRcbQLOhgctaFhWyhPTi17kVGNyZOdvJ/2HhoNthmdghIzNsnZsMScJZhVBaQQ==",
-      "type": "package",
-      "path": "fakeiteasy/8.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "fakeiteasy.8.3.0.nupkg.sha512",
-        "fakeiteasy.nuspec",
-        "images/FakeItEasy.png",
-        "lib/net462/FakeItEasy.dll",
-        "lib/net462/FakeItEasy.xml",
-        "lib/net6.0/FakeItEasy.dll",
-        "lib/net6.0/FakeItEasy.xml",
-        "lib/net8.0/FakeItEasy.dll",
-        "lib/net8.0/FakeItEasy.xml",
-        "lib/netstandard2.0/FakeItEasy.dll",
-        "lib/netstandard2.0/FakeItEasy.xml",
-        "lib/netstandard2.1/FakeItEasy.dll",
-        "lib/netstandard2.1/FakeItEasy.xml"
       ]
     },
     "Fare/2.1.1": {
@@ -8754,7 +8715,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoFixture >= 4.18.1",
-      "FakeItEasy >= 8.3.0",
       "MSTest.TestFramework >= 3.4.3",
       "Microsoft.AspNetCore.Mvc.Testing >= 8.0.7",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
@@ -8821,10 +8781,6 @@
           "AutoFixture": {
             "target": "Package",
             "version": "[4.18.1, )"
-          },
-          "FakeItEasy": {
-            "target": "Package",
-            "version": "[8.3.0, )"
           },
           "MSTest.TestFramework": {
             "target": "Package",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projeto Vize Testes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3c4a9fc8a81e7b9b999ff4b842096ea6ea1e8d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+027b0032dbbeadc5d36b4b9f4d1aea0a8ec0c9e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projeto Vize Testes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto Vize Testes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

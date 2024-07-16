@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2wiM2Dlwyd04d6fv0yswnkxV9tsptEKyfsdDmBBj/fL95YfEuZUBK25qLnN8ctyxeSsfF2g7cVbG7J+NCpdhBw==",
+  "dgSpecHash": "4K5ItVRvnPebNVp3uvnEbUDPYreL4hM/zllYE668oBtJseptxStpT/tA4MEG5GpN0VzdZ1w+pPeVHSaWEncQlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\virro\\source\\repos\\Projeto Vize\\Projeto Vize Testes\\Projeto Vize Testes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\virro\\.nuget\\packages\\autofixture\\4.18.1\\autofixture.4.18.1.nupkg.sha512",
     "C:\\Users\\virro\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\virro\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
-    "C:\\Users\\virro\\.nuget\\packages\\fakeiteasy\\8.3.0\\fakeiteasy.8.3.0.nupkg.sha512",
     "C:\\Users\\virro\\.nuget\\packages\\fare\\2.1.1\\fare.2.1.1.nupkg.sha512",
     "C:\\Users\\virro\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\8.0.7\\microsoft.aspnetcore.mvc.testing.8.0.7.nupkg.sha512",
     "C:\\Users\\virro\\.nuget\\packages\\microsoft.aspnetcore.testhost\\8.0.7\\microsoft.aspnetcore.testhost.8.0.7.nupkg.sha512",
