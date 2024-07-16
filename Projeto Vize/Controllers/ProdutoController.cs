@@ -16,7 +16,7 @@ namespace Projeto_Vize.Controllers
         {
             List<ProdutoModel> produtos = await _repositorioProduto.ConsulteProdutos();
 
-            return produtos.Count == 0 ? BadRequest("Nenhum produto encontrado") : produtos;
+            return produtos.Count == 0 ? BadRequest("Nenhum produto encontrado") : Ok(produtos);
         }
            
 
@@ -26,7 +26,7 @@ namespace Projeto_Vize.Controllers
         {
             ProdutoModel produto = await _repositorioProduto.ConsulteProdutoPorId(id);
 
-            return produto.Id != 0 ?  produto : BadRequest("Produto não Cadastrado");
+            return produto.Id != 0 ?  Ok(produto) : BadRequest("Produto não Cadastrado");
         }
             
 
@@ -53,7 +53,7 @@ namespace Projeto_Vize.Controllers
 
             await _repositorioProduto.AdicioneProduto(produto);
 
-            return produto;
+            return Ok(produto);
         }
 
         [HttpPost]
@@ -67,7 +67,7 @@ namespace Projeto_Vize.Controllers
 
             await _repositorioProduto.EditeProduto(produto, id);
 
-            return produto;
+            return Ok(produto);
         }
 
         [HttpDelete]
