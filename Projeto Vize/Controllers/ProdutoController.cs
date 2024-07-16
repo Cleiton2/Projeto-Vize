@@ -58,7 +58,7 @@ namespace Projeto_Vize.Controllers
 
         [HttpPost]
         [Route("EditeProduto/{id}")]
-        public async Task<ActionResult> EditeProduto([FromBody] ProdutoModel produto, int id)
+        public async Task<ActionResult<ProdutoModel>> EditeProduto([FromBody] ProdutoModel produto, int id)
         {
             if (id <= 0)
             {
@@ -67,7 +67,7 @@ namespace Projeto_Vize.Controllers
 
             await _repositorioProduto.EditeProduto(produto, id);
 
-            return Ok();
+            return produto;
         }
 
         [HttpDelete]

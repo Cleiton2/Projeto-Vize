@@ -36,6 +36,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Projeto Vize Testes/1.0.0": {
         "dependencies": {
+          "AutoFixture": "4.18.1",
           "FakeItEasy": "8.3.0",
           "MSTest.TestFramework": "3.4.3",
           "Microsoft.AspNetCore.Mvc.Testing": "8.0.7",
@@ -193,9 +194,9 @@
           "System.Collections.Immutable": "8.0.0.0",
           "System.Collections.NonGeneric": "8.0.0.0",
           "System.Collections.Specialized": "8.0.0.0",
-          "System.ComponentModel.Annotations": "8.0.0.0",
+          "System.ComponentModel.Annotations.Reference": "8.0.0.0",
           "System.ComponentModel.DataAnnotations": "4.0.0.0",
-          "System.ComponentModel": "8.0.0.0",
+          "System.ComponentModel.Reference": "8.0.0.0",
           "System.ComponentModel.EventBasedAsync": "8.0.0.0",
           "System.ComponentModel.Primitives": "8.0.0.0",
           "System.ComponentModel.TypeConverter": "8.0.0.0",
@@ -353,6 +354,21 @@
           "Projeto Vize Testes.dll": {}
         }
       },
+      "AutoFixture/4.18.1": {
+        "dependencies": {
+          "Fare": "2.1.1",
+          "System.ComponentModel.Annotations": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoFixture.dll": {
+            "assemblyVersion": "4.18.0.0",
+            "fileVersion": "4.18.1.694"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoFixture.dll": {}
+        }
+      },
       "Castle.Core/5.1.1": {
         "dependencies": {
           "System.Diagnostics.EventLog": "8.0.0"
@@ -380,6 +396,20 @@
         },
         "compile": {
           "lib/net8.0/FakeItEasy.dll": {}
+        }
+      },
+      "Fare/2.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Fare.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/Fare.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.Testing/8.0.7": {
@@ -1278,6 +1308,26 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.Annotations/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.ComponentModel": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
         }
       },
       "System.Configuration.ConfigurationManager/8.0.0": {
@@ -2826,7 +2876,7 @@
         },
         "compileOnly": true
       },
-      "System.ComponentModel.Annotations/8.0.0.0": {
+      "System.ComponentModel.Annotations.Reference/8.0.0.0": {
         "compile": {
           "System.ComponentModel.Annotations.dll": {}
         },
@@ -2838,7 +2888,7 @@
         },
         "compileOnly": true
       },
-      "System.ComponentModel/8.0.0.0": {
+      "System.ComponentModel.Reference/8.0.0.0": {
         "compile": {
           "System.ComponentModel.dll": {}
         },
@@ -3746,6 +3796,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoFixture/4.18.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BmWZDY4fkrYOyd5/CTBOeXbzsNwV8kI4kDi/Ty1Y5F+WDHBVKxzfWlBE4RSicvZ+EOi2XDaN5uwdrHsItLW6Kw==",
+      "path": "autofixture/4.18.1",
+      "hashPath": "autofixture.4.18.1.nupkg.sha512"
+    },
     "Castle.Core/5.1.1": {
       "type": "package",
       "serviceable": true,
@@ -3766,6 +3823,13 @@
       "sha512": "sha512-5QmShA6njFOhQHUYrFUjWEepfRcbQLOhgctaFhWyhPTi17kVGNyZOdvJ/2HhoNthmdghIzNsnZsMScJZhVBaQQ==",
       "path": "fakeiteasy/8.3.0",
       "hashPath": "fakeiteasy.8.3.0.nupkg.sha512"
+    },
+    "Fare/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HaI8puqA66YU7/9cK4Sgbs1taUTP1Ssa4QT2PIzqJ7GvAbN1QgkjbRsjH+FSbMh1MJdvS0CIwQNLtFT+KF6KpA==",
+      "path": "fare/2.1.1",
+      "hashPath": "fare.2.1.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Testing/8.0.7": {
       "type": "package",
@@ -4298,6 +4362,20 @@
       "sha512": "sha512-ztl69Xp0Y/UXCL+3v3tEU+lIy+bvjKNUmopn1wep/a291pVPK7dxBd6T7WnlQqRog+d1a/hSsgRsmFnIBKTPLQ==",
       "path": "system.collections.concurrent/4.3.0",
       "hashPath": "system.collections.concurrent.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "path": "system.componentmodel/4.3.0",
+      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SY2RLItHt43rd8J9D8M8e8NM4m+9WLN2uUd9G0n1I4hj/7w+v3pzK6ZBjexlG1/2xvLKQsqir3UGVSyBTXMLWA==",
+      "path": "system.componentmodel.annotations/4.3.0",
+      "hashPath": "system.componentmodel.annotations.4.3.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/8.0.0": {
       "type": "package",
@@ -5497,7 +5575,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.ComponentModel.Annotations/8.0.0.0": {
+    "System.ComponentModel.Annotations.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5507,7 +5585,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.ComponentModel/8.0.0.0": {
+    "System.ComponentModel.Reference/8.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
